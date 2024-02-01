@@ -34,7 +34,14 @@ function everyOther(str, i=0) {
 /** isPalindrome: checks whether a string is a palindrome or not. */
 
 function isPalindrome(str) {
+  if (str.length === 0 || str.length === 1) return true;
 
+  if (str[0] === str[str.length - 1]){
+    let subStr = str.substring(1, str.length - 1);
+    return isPalindrome(subStr)
+  } else{
+    return false;
+  }
 }
 
 /** findIndex: return the index of val in arr (or -1 if val is not present). */
