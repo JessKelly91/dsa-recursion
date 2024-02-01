@@ -9,21 +9,30 @@ function product(nums, i=0) {
 /** longest: return the length of the longest word in an array of words. */
 
 function longest(words) {
-  let longest = 0;
+  //non-recursive solution
+  // let longest = 0;
 
-  for (word of words){
-    if (word.length > longest){
-      longest = word.length
-    }
-  }
+  // for (word of words){
+  //   if (word.length > longest){
+  //     longest = word.length
+  //   }
+  // }
 
-  return longest;
+  // return longest;
+
+
 }
 
 /** everyOther: return a string with every other letter. */
 
-function everyOther(str) {
+function everyOther(str, i=0) {
+  if (i === str.length) return "";
 
+  if (i%2 === 0){
+    return str[i] + everyOther(str, i+=1)
+  } else {
+    return "" + everyOther(str, i+=1)
+  }
 }
 
 /** isPalindrome: checks whether a string is a palindrome or not. */
