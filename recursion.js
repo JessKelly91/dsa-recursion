@@ -8,19 +8,15 @@ function product(nums, i=0) {
 
 /** longest: return the length of the longest word in an array of words. */
 
-function longest(words) {
-  //non-recursive solution
-  // let longest = 0;
+function longest(words, i = 0, longestLength=0) {
+  if (i === words.length) return longestLength;
 
-  // for (word of words){
-  //   if (word.length > longest){
-  //     longest = word.length
-  //   }
-  // }
-
-  // return longest;
-
-
+  if (words[i].length > longestLength) {
+    longestLength = words[i].length;
+    return longest(words, i +=1, longestLength);
+  } else {
+    return longest(words, i += 1, longestLength);
+  }
 }
 
 /** everyOther: return a string with every other letter. */
