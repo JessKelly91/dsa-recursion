@@ -9,22 +9,22 @@ const {
   binarySearch
 } = require("./recursion");
 
-describe("product", function() {
-  it("returns the product of all numbers in an array", function() {
-    expect(product([2, 3, 4])).toBe(24);
-    expect(product([1, -1, 1, -1, 1, -1])).toBe(-1);
-    expect(product([10])).toBe(10);
-  });
-});
-
-// describe("longest", function() {
-//   it("returns the length of the longest word in an array of words", function() {
-//     expect(longest(["hello", "hi", "hola"])).toBe(5);
-//     expect(longest(["abcdefg", "hijklmnop", "qrs", "tuv", "wx", "y", "z"])).toBe(9);
-//     expect(longest(["a", "b", "c", "d", "e"])).toBe(1);
-//     expect(longest(["abcde"])).toBe(5);
+// describe("product", function() {
+//   it("returns the product of all numbers in an array", function() {
+//     expect(product([2, 3, 4])).toBe(24);
+//     expect(product([1, -1, 1, -1, 1, -1])).toBe(-1);
+//     expect(product([10])).toBe(10);
 //   });
 // });
+
+describe("longest", function() {
+  it("returns the length of the longest word in an array of words", function() {
+    expect(longest(["hello", "hi", "hola"])).toBe(5);
+    expect(longest(["abcdefg", "hijklmnop", "qrs", "tuv", "wx", "y", "z"])).toBe(9);
+    expect(longest(["a", "b", "c", "d", "e"])).toBe(1);
+    expect(longest(["abcde"])).toBe(5);
+  });
+});
 
 // describe("everyOther", function() {
 //   it("returns a string with every other character in the input", function() {

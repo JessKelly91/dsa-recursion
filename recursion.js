@@ -14,8 +14,6 @@ function longest(words) {
   for (word of words){
     if (word.length > longest){
       longest = word.length
-    } else {
-      return
     }
   }
 
