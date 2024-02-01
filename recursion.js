@@ -1,9 +1,9 @@
 /** product: calculate the product of an array of numbers. */
 
 function product(nums, i=0) {
-  if (i === nums.length) return 0;
+  if (i === nums.length) return 1;
 
-  return nums[i] * product(nums, i+1);
+  return nums[i] * product(nums, i+=1);
 }
 
 /** longest: return the length of the longest word in an array of words. */
