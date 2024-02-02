@@ -51,29 +51,29 @@ const {
 //   });
 // });
 
-describe("findIndex", function() {
-  let animals = ["duck", "cat", "pony", "cat"];
+// describe("findIndex", function() {
+//   let animals = ["duck", "cat", "pony", "cat"];
 
-  it("returns the first index of the value in the array if the value exists", function() {
-    expect(findIndex(animals, "duck")).toBe(0);
-    expect(findIndex(animals, "cat")).toBe(1);
-    expect(findIndex(animals, "pony")).toBe(2);
-  });
+//   it("returns the first index of the value in the array if the value exists", function() {
+//     expect(findIndex(animals, "duck")).toBe(0);
+//     expect(findIndex(animals, "cat")).toBe(1);
+//     expect(findIndex(animals, "pony")).toBe(2);
+//   });
 
-  it("returns -1 if the value does not exist", function() {
-    expect(findIndex(animals, "porcupine")).toBe(-1);
-    expect(findIndex(animals, "turtle")).toBe(-1);
-  });
-});
-
-// describe("revString", function() {
-//   it("returns a reversed copy of the string", function() {
-//     expect(revString("porcupine")).toBe("enipucrop");
-//     expect(revString("duck")).toBe("kcud");
-//     expect(revString("cat")).toBe("tac");
-//     expect(revString("pony")).toBe("ynop");
+//   it("returns -1 if the value does not exist", function() {
+//     expect(findIndex(animals, "porcupine")).toBe(-1);
+//     expect(findIndex(animals, "turtle")).toBe(-1);
 //   });
 // });
+
+describe("revString", function() {
+  it("returns a reversed copy of the string", function() {
+    expect(revString("porcupine")).toBe("enipucrop");
+    expect(revString("duck")).toBe("kcud");
+    expect(revString("cat")).toBe("tac");
+    expect(revString("pony")).toBe("ynop");
+  });
+});
 
 // describe("gatherStrings", function() {
 //   it("gathers all object string values into an array", function() {
