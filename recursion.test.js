@@ -36,35 +36,35 @@ const {
 //   });
 // });
 
-describe("isPalindrome", function() {
-  it("returns true if the string is a palindrome", function() {
-    expect(isPalindrome("tacocat")).toBe(true);
-    expect(isPalindrome("racecar")).toBe(true);
-    expect(isPalindrome("a")).toBe(true);
-    expect(isPalindrome("helloolleh")).toBe(true);
-  });
-
-  it("returns false if the string is not a palindrome", function() {
-    expect(isPalindrome("tacodog")).toBe(false);
-    expect(isPalindrome("az")).toBe(false);
-    expect(isPalindrome("goodbye")).toBe(false);
-  });
-});
-
-// describe("findIndex", function() {
-//   let animals = ["duck", "cat", "pony", "cat"];
-
-//   it("returns the first index of the value in the array if the value exists", function() {
-//     expect(findIndex(animals, "duck")).toBe(0);
-//     expect(findIndex(animals, "cat")).toBe(1);
-//     expect(findIndex(animals, "pony")).toBe(2);
+// describe("isPalindrome", function() {
+//   it("returns true if the string is a palindrome", function() {
+//     expect(isPalindrome("tacocat")).toBe(true);
+//     expect(isPalindrome("racecar")).toBe(true);
+//     expect(isPalindrome("a")).toBe(true);
+//     expect(isPalindrome("helloolleh")).toBe(true);
 //   });
 
-//   it("returns -1 if the value does not exist", function() {
-//     expect(findIndex(animals, "porcupine")).toBe(-1);
-//     expect(findIndex(animals, "turtle")).toBe(-1);
+//   it("returns false if the string is not a palindrome", function() {
+//     expect(isPalindrome("tacodog")).toBe(false);
+//     expect(isPalindrome("az")).toBe(false);
+//     expect(isPalindrome("goodbye")).toBe(false);
 //   });
 // });
+
+describe("findIndex", function() {
+  let animals = ["duck", "cat", "pony", "cat"];
+
+  it("returns the first index of the value in the array if the value exists", function() {
+    expect(findIndex(animals, "duck")).toBe(0);
+    expect(findIndex(animals, "cat")).toBe(1);
+    expect(findIndex(animals, "pony")).toBe(2);
+  });
+
+  it("returns -1 if the value does not exist", function() {
+    expect(findIndex(animals, "porcupine")).toBe(-1);
+    expect(findIndex(animals, "turtle")).toBe(-1);
+  });
+});
 
 // describe("revString", function() {
 //   it("returns a reversed copy of the string", function() {
