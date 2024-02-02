@@ -68,7 +68,14 @@ function revString(str, i=str.length-1) {
 
 /** gatherStrings: given an object, return an array of all of the string values. */
 
-function gatherStrings(obj) {
+function gatherStrings(obj, values=Object.values(obj), i=0, gatheredArr=[]) {
+  if(i === values.length) return gatheredArr;
+
+  if(typeof values[i] === 'string'){
+    gatheredArr.push(values[i])
+  }
+
+  return gatherStrings(obj, values, i+=1, gatheredArr)
 
 }
 
