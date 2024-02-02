@@ -73,8 +73,11 @@ function gatherStrings(obj, values=Object.values(obj), i=0, gatheredArr=[]) {
 
   if(typeof values[i] === 'string'){
     gatheredArr.push(values[i])
+  } else if(typeof values[i] === 'object'){
+    gatherStrings(values[i], Object.values(values[i]), 0, gatheredArr)
   }
 
+  console.log(gatheredArr)
   return gatherStrings(obj, values, i+=1, gatheredArr)
 
 }
